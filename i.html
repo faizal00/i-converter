@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    body{
+        background-image: url('https://wallpaperaccess.com/full/42277.jpg');
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+    .bkg{
+        background-color: rgba(255, 255, 255, 0.11);
+        padding: 40px;
+        margin-top: 5%; 
+        margin-left: 25%;
+        width: 50%;
+        align-items: center;
+        border: 
+    }
+    .btn-new{
+        border: 3px solid rgb(255, 255, 255);
+        background: rgb(248, 107, 166);
+        padding: 10px 20px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 900;
+        color: white;
+    }
+    .btn-new:hover{
+    background-color: rgb(109, 143, 255);
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
+    .asd{
+        color: aqua;
+        background-color: white;
+    }
+    .form-control.anyar{
+        border-radius: 0%;
+        border: none;
+        margin-top: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 900;
+        color: black;
+        text-align: center;
+    }
+    .form-control.anyar:disabled{
+        border-radius: 0%;
+        border: none;
+        margin-top: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 900;
+        color: black;
+        text-align: center;
+    }
+    .ok{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        margin-top: 5%;
+    }
+    .sp{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: white;   
+        margin-top: 5%;
+    }
+    .sd{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        color: white;   
+        margin-top: 3%;    }
+    </style>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>    
+<body>
+    
+<div class="container">
+
+        <h2 class="ok">LET'S GENERATE NOW!</h2>
+
+    <div class="bkg">
+            <p class="sp">Jangan Pakai Huruf KAPITAL !</p>
+
+    <center>
+<input class="form-control form-control-lg anyar" id="inyi">
+<br>
+<button class="btn-new" onclick="FungsiI()">GENERATE</button>
+<input type="hidden" name="" id="as">
+<input class="form-control form-control-lg anyar" id="hasil" value="" oninput="Fungsiany()">
+<br>
+<button class="btn-new" onclick="Fungsi()">COPY</button>
+
+    </center>
+    <h2 class="sd">I GENERATOR</h2>
+
+    <p class="sp">@copyright 2020 - <a class="sp" href="https://www.instagram.com/fzlrmdn0/">Faizal Rahmadani</a> </p>
+
+</div>
+</div>
+
+
+<script>
+function FungsiI() {
+  var str = document.getElementById("inyi").value; 
+  var tes = str.split('a');
+  var count = tes.length;
+  var tes1 = "";
+  for(var i=0; i<count; i++){
+      var tes1 = tes1  + tes[i]+ "i";
+  } 
+  var tes1 = tes1 + "value";
+  var tes1= tes1.replace('ivalue',''); 
+  var tes = tes1.split('i');
+  var count = tes.length;
+  var tes1 = "";
+  for(var i=0; i<count; i++){
+      var tes1 = tes1  + tes[i]+ "i";
+  } 
+  var tes1 = tes1 + "value";
+  var tes1= tes1.replace('ivalue',''); 
+  var tes = tes1.split('u');
+  var count = tes.length;
+  var tes1 = "";
+  for(var i=0; i<count; i++){
+      var tes1 = tes1  + tes[i]+ "i";
+  } 
+  var tes1 = tes1 + "value";
+  var tes1= tes1.replace('ivalue',''); 
+  var tes = tes1.split('e');
+  var count = tes.length;
+  var tes1 = "";
+  for(var i=0; i<count; i++){
+      var tes1 = tes1  + tes[i]+ "i";
+  } 
+  var tes1 = tes1 + "value";
+  var tes1= tes1.replace('ivalue',''); 
+  var tes = tes1.split('o');
+  var count = tes.length;
+  var tes1 = "";
+  for(var i=0; i<count; i++){
+      var tes1 = tes1  + tes[i]+ "i";
+  } 
+  var tes1 = tes1 + "value";
+  var tes1= tes1.replace('ivalue',''); 
+  document.getElementById("hasil").value=tes1; 
+  document.getElementById("as").value=tes1;
+ }
+</script>
+<script>
+        function Fungsi() {
+          var copyText = document.getElementById("hasil");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+          alert("Copied the text: " + copyText.value);
+        }
+        function Fungsiany(){
+            var as = document.getElementById('as').value;
+            document.getElementById('hasil').value = as; 
+        }
+        </script>
+
+</body>
+</html>
